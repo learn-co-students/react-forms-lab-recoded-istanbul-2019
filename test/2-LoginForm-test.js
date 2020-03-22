@@ -49,7 +49,8 @@ describe("<LoginForm />", () => {
         spy.calledOnce,
         "The default form action is not being prevented when the form is submitted"
       ).to.be.true;
-    });
+    }
+    );
 
     it("should not call the `handleLogin` callback prop when the username and/or password fields are empty", () => {
       let spy = sinon.spy()
