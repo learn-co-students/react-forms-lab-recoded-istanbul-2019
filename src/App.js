@@ -23,7 +23,6 @@ class App extends Component {
         <TwitterMessage maxChars={280} />
 
 
-
       </div>
     )
   }
