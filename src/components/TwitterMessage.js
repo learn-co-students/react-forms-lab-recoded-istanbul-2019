@@ -20,10 +20,12 @@ class TwitterMessage extends React.Component {
         return {
           ...prev,
           value: eventValue,
-          counter: prev.maxChars - 1
+          //counter: prev.maxChars - 1
           //counter: maxChars - prev.value.length
+          counter: (maxChars - 1) - Object.keys(prev.value).length
+
         }
-      }
+      }, () => console.log(this.state.counter)
     )
   }
 
